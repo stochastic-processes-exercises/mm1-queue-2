@@ -32,6 +32,7 @@ class UnitTests(unittest.TestCase) :
     def test_variables(self) : 
       assert(check_vars("lam",0.5))
       assert(check_vars("expr",1.0))
-  
+      assert(check_vars("N",100000)) 
+ 
     def test_queue(self) :
       assert(check_plot([],exppatch=line1,explabels=axislabels,explegend=False,output=True)) 
