@@ -9,6 +9,7 @@ except:
 
 from AutoFeedback.plotclass import line
 from AutoFeedback.randomclass import randomvar
+from AutoFeedback.varchecks import check_vars
 import unittest
 from main import *
 
@@ -29,8 +30,8 @@ axislabels=["number of people in queue", "probability"]
 
 class UnitTests(unittest.TestCase) :
     def test_variables(self) : 
-      assert(vc.check_vars("lam",0.5))
-      assert(vc.check_vars("expr",1.0))
+      assert(check_vars("lam",0.5))
+      assert(check_vars("expr",1.0))
   
     def test_queue(self) :
       assert(check_plot([],exppatch=line1,explabels=axislabels,explegend=False,output=True)) 
