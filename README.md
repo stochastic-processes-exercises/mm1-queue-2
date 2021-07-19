@@ -4,7 +4,7 @@ In a previous exercise you learned to simulate an M/M/1 queue and how to extract
 
 To complete this exercise you will need to reproduce the code that you wrote in the previous exercise that simulated the queue.  This time, however, you do not need to write this within a function.  Additionally, you need to keep track of the times at which the length of the queue changed by using a list of lists called `events` and the two commands shown below:
 
-`````
+````
 # Use this command to record times at which the number of customers in the queuing system increased by one
 events.append([time,+1])
 # Use this command to record times at which the number of customers in the queuing system decreased by one
